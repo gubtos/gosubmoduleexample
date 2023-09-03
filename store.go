@@ -29,7 +29,7 @@ func (c *Store) StoreData(a string, b string) error {
 		ValB: b,
 	}
 	c.dataMap[a] = newData
-	c.logger.Log(newData)
+	c.logger(newData)
 
 	return nil
 }
