@@ -9,9 +9,7 @@ type Data struct {
 	ValB string
 }
 
-type Logger interface {
-	Log(Data)
-}
+type Logger func(Data)
 
 type Store struct {
 	logger  Logger
